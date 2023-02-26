@@ -1,0 +1,236 @@
+/* senario-filter */
+.senario-filter{
+    margin-bottom: 50px;
+}
+
+.class-row{
+    padding-top: 90px;
+    width: 100%;
+}
+.classify{
+    background-color: #efefef;
+}
+
+.type-card{
+    margin-bottom: 30px;
+}
+
+.class-title{
+    font-size: 32px;
+    line-height: 48px;
+}
+.class-subtitle{
+    font-size: 16px;
+    line-height: 36px;
+}
+.class-bar{
+    padding-left: 12px;
+}
+
+/* senario-selected */
+.intro{
+    margin: 40px auto;
+}
+
+.reservation-btn{
+    float: right;
+}
+
+.sen-intro{
+    padding-top: 100px;
+}
+.intro-bar{
+    padding: 0 32px;
+}
+.selected_sen{
+    display: inline-block;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+.sen-image{
+    background-color: #f2f2f2;
+    height: 400px;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.sen-textarea{
+    padding: 20px;
+}
+.sen-textarea .subtitle{
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+.sen-textarea .para{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/*calander btn*/
+.clbtn{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    padding: 6px 32px;
+    margin: 8px auto;
+    text-decoration: none;
+    border-radius: 26px;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: transform 0.2;
+}
+input.btn:focus{
+    outline: 0;
+}
+.clbtn:hover{
+    transform: scale(1.05);
+}
+.clbtn.btn--primary{
+    background-color: #38B591;
+    border: 2px solid #38B591;
+    color: #fff;
+}
+.clbtn.btn--secondary{
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #38B591;
+}
+
+/* reservation  calendar*/
+.reservation{
+    width: 960px;
+    height: 640px;
+}
+
+.calendar{
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.calendar__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px 10px;
+}
+.calendar__header .current-month{
+    font-size: 1.45rem;
+    font-weight: 500s;
+}
+.calendar__header .month-icons i{
+    height: 38px;
+    width: 38px;
+    line-height: 38px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: #878787;
+}
+.calendar__header .month-icons i:last-child{
+    margin-right: -10px;
+}
+.calendar__header .month-icons i:hover{
+    background-color: #f2f2f2;
+}
+.calendar-area{
+    padding: 20px;
+}
+.calendar-area ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.calendar-area .days{
+    margin-bottom: 20px;
+}
+.calendar-area ul li{
+    width: calc(100%/7);
+}
+.calendar-area .weeks li{
+    font-weight: 800;
+}
+.calendar-area .days li{
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+.days li.inactive{
+    color: #aaa;
+}
+.days li.active{
+    color: #fff;
+}
+.calendar-area .days li:before{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.calendar-area .days li.active:before{
+    background-color: #38B591;
+}
+.calendar-area .days li:hover::before{
+    background-color: #f2f2f2;
+}
+/* time area */
+.time-area{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.time-area:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#3AA9AC,#4C8F9A);
+    opacity: 0.9;
+}
+
+.time-area .time-area__date{
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #f2f2f2;
+}
+.time-area .time-area__fullinfo{
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #f2f2f2;
+}
+.time-area .btn:not(:last-child){
+    margin-bottom: 8px;
+}
+
+/* reservation form */
+.res-form{
+    text-align: center;
+}
+.res-form .form-name,.res-form .form-phone, .res-form .form-email{
+    display: inline-block;
+}
+
+

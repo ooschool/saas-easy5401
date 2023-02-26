@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ch-zn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="../assets/vendor/normalize_css/normalize.css">
+
+    <!-- import vendor -->
+    <link rel="stylesheet" href="../assets/vendor/bootstarp/bootstrap-grid.css">
+    <link href="../assets/vendor/fontawesome-free-6.2.1-web/css/fontawesome.css" rel="stylesheet">
+    <link href="../assets/vendor/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
+    <link href="../assets/vendor/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
+
+    <!-- import css -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    
+
+    <title>莫里亞蒂LARP</title>
+</head>
+<body>
+    <div class="wrapper">
+      <!-- start header -->
+      <div class="header">
+          <div class="navbar">
+              <div class="container">
+                  <a href="../main.html" class="brand">
+                      <h1>莫里亞蒂犯罪推理事務所</h1>
+                  </a>
+                  <ul id="popup-menu" class="nav">
+                    <div class="popup-nav close-nav">
+                        <a href="#!" class="popup-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                      <li class="nav-item">
+                          <a href="senarios-select.html" class="nav-link">劇本探索</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="news.html" class="nav-link">最新消息</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="contact.html" class="nav-link">聯絡我們</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="question.html" class="nav-link">常見問題</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="order-select.html" class="nav-link order-link">訂單查詢</a>
+                      </li>
+                  </ul>
+                  <div class="popup-nav">
+                    <a href="#!" class="popup-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- end header -->
+
+      <!-- start main -->
+      <div class="main">
+        <div class="senario-filter">
+            <div class="container">
+                <div class="row class-row">
+                    <div class="col-lg-3 classify">
+                        <h4 class="class-title">劇本篩選</h4>
+                        <div class="class-bar">
+                            <div id="number-of-people" class="filter">
+                                <h6 class="class-subtitle">遊玩人數</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        5人劇本
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        6人劇本
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        7人劇本
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        8人劇本
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="type-of-senario" class="filter" >
+                                <h6 class="class-subtitle">劇本類型</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        歡樂
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        推理
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        沈浸
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        恐怖
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="complexity-of-senario" class="filter">
+                                <h6 class="class-subtitle">劇本難度</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        新手
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        進階
+                                    </label>
+                                </div>
+                            </div>                        
+                            <br>
+                            <div id="other" class="filter">
+                                <h6 class="class-subtitle">特殊需求</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        可以反串
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        無需換裝
+                                    </label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <h4 class="class-title">劇本列表</h4>
+                        <h6 class="class-subtitle">劇本篩選自 Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="type-card">
+                                    <div class="img-container">
+                                        <div class="image" style="background-image: url('../assets/images/background/card.jpeg');"></div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card-title">恐怖劇本</div>
+                                        <div class="card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore numquam reiciendis, eligendi perspiciatis repudiandae voluptas.</div>
+                                        <a href="senarios-selected.html" class="btn btn-primary btn-sn">前往預約</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="type-card">
+                                    <div class="img-container">
+                                        <div class="image" style="background-image: url('../assets/images/background/card.jpeg');"></div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card-title">恐怖劇本</div>
+                                        <div class="card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore numquam reiciendis, eligendi perspiciatis repudiandae voluptas.</div>
+                                        <a href="senarios-selected.html" class="btn btn-primary btn-sn">前往預約</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="type-card">
+                                    <div class="img-container">
+                                        <div class="image" style="background-image: url('../assets/images/background/card.jpeg');"></div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card-title">恐怖劇本</div>
+                                        <div class="card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore numquam reiciendis, eligendi perspiciatis repudiandae voluptas.</div>
+                                        <a href="senarios-selected.html" class="btn btn-primary btn-sn">前往預約</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="type-card">
+                                    <div class="img-container">
+                                        <div class="image" style="background-image: url('../assets/images/background/card.jpeg');"></div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card-title">恐怖劇本</div>
+                                        <div class="card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore numquam reiciendis, eligendi perspiciatis repudiandae voluptas.</div>
+                                        <a href="senarios-selected.html" class="btn btn-primary btn-sn">前往預約</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="type-card">
+                                    <div class="img-container">
+                                        <div class="image" style="background-image: url('../assets/images/background/card.jpeg');"></div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card-title">恐怖劇本</div>
+                                        <div class="card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore numquam reiciendis, eligendi perspiciatis repudiandae voluptas.</div>
+                                        <a href="senarios-selected.html" class="btn btn-primary btn-sn">前往預約</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+      <!-- end main -->
+
+      <!-- start footer -->
+        <footer class="footer">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="../main.html" class="nav-link">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="senarios-select.html" class="nav-link">劇本探索</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">最新消息</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="brand">
+                            <h1>莫里亞蒂犯罪推理事務所</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">聯絡我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="question.html" class="nav-link">常見問題</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="order-select.html" class="nav-link order-link">訂單查詢</a>
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <div class="copyright">
+                <p class="copyright__text">Copyright © 2023 莫里亞蒂犯罪推理事務所</p>
+            </div>
+        
+        </footer>
+      <!-- end footer -->
+    </div>
+</body>
+<!-- JS -->
+<!--Jquery Library-->
+<script src="../assets/vendor/jquery/jquery-3.6.3.min.js"></script>
+<script src="../assets/js/main.js"></script>
+</html>
