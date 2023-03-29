@@ -15,7 +15,7 @@
     <link href="../assets/vendor/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
 
     <!-- import css -->
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 
     
 
@@ -23,113 +23,49 @@
 </head>
 <body>
     <div class="wrapper">
-      <!-- start header -->
-      <div class="header">
-        <div class="navbar">
-            <div class="container">
-                <a href="../main.html" class="brand">
-                    <h1>莫里亞蒂犯罪推理事務所</h1>
-                </a>
-                <ul id="popup-menu" class="nav">
-                  <div class="popup-nav close-nav">
-                      <a href="#!" class="popup-btn">
-                          <i class="fa-solid fa-bars"></i>
-                      </a>
-                  </div>
-                    <li class="nav-item">
-                        <a href="senarios-select.html" class="nav-link">劇本探索</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="news.html" class="nav-link">最新消息</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">聯絡我們</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="question.html" class="nav-link">常見問題</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="order-select.html" class="nav-link order-link">訂單查詢</a>
-                    </li>
-                </ul>
-                <div class="popup-nav">
-                  <a href="#!" class="popup-btn">
-                      <i class="fa-solid fa-bars"></i>
-                  </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end header -->
+        <!-- start header -->
+        <div id="navigation-bar"></div>
+        <!-- end header -->
       
-      <!-- start order-select -->
-      <div class="order-search-form">
-        <div class="container">
-            <h2 class="form_title">訂單查詢</h2>
-            <br>
-            <form action="" class="form">
-                <div class="form_item">
-                    <input type="text" class="order-input" placeholder="輸入你的訂單編號/預約人電話">
-                </div>
-                <div class="form_item">
-                    <!-- <input type="submit" class="btn btn-primary btn-submit" value='送出'> -->
-                    <a href="order-result.html" class="btn btn-primary btn-submit">送出</a>
-                </div>
-            </form>
-        </div>
-      </div>
-
-      <!-- end order-select -->
-      <div class="card">
-        <div class="container"> 
-            <div class="questioncard">
-                <h4 class="question-text">如何進行劇本殺場次預約？如何進行劇本殺場次預約？</h4>
-                <div class="btn-area">
-                    <div class="btn-answer btn btn-primary">
-                        <i class="fa-solid fa-angle-down"></i>
+        <!-- start order-select -->
+        <div class="form form--mt">
+            <div class="container">
+                <h2 class="form__title">訂單查詢</h2>
+                <br>
+                <form action="" class="form__area">
+                    <div class="form__item">
+                        <input type="text" class="form__input" placeholder="輸入你的訂單編號/預約人電話">
                     </div>
-                </div>
-                <h6 class="answer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis deleniti itaque voluptatem dolore quibusdam voluptas recusandae eius esse, hic aperiam asperiores! Aliquid tempore, minima modi error asperiores a harum itaque.</h6>
+                    <div class="form__item">
+                        <a href="order-result.html" class="btn btn--primary btn--submit">送出</a>
+                    </div>
+                </form>
             </div>
         </div>
-      </div>
 
-      <!-- start footer -->
-      <footer class="footer">
-        <div class="container">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="../main.html" class="nav-link">首頁</a>
-                </li>
-                <li class="nav-item">
-                    <a href="senarios-select.html" class="nav-link">劇本探索</a>
-                </li>
-                <li class="nav-item">
-                    <a href="news.html" class="nav-link">最新消息</a>
-                </li>
-                <li>
-                    <a href="#!" class="brand">
-                        <h1>莫里亞蒂犯罪推理事務所</h1>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">聯絡我們</a>
-                </li>
-                <li class="nav-item">
-                    <a href="question.html" class="nav-link">常見問題</a>
-                </li>
-                <li class="nav-item">
-                    <a href="order-select.html" class="nav-link order-link">訂單查詢</a>
-                </li>
-            </ul>
-            <br>
+        <!-- end order-select -->
+        <div class="card">
+            <div class="container"> 
+                <div class="questioncard" id="question1">
+                    <h4 class="question__text">如何進行劇本殺場次預約？如何進行劇本殺場次預約？</h4>
+                    <div class="btn__area more" id="question1-btn">
+                        <div class="btn--answer btn btn--primary">
+                            <i class="fa-solid fa-angle-down" id="question1-i"></i>
+                        </div>
+                    </div>
+                    <div class="btn__area close" id="question1-btn">
+                        <div class="btn--answer btn btn--primary">
+                            <i class="fa-solid fa-angle-up" id="question1-i"></i>
+                        </div>
+                    </div>
+                    <h6 class="answer__text" id="question1-btn-ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis deleniti itaque voluptatem dolore quibusdam voluptas recusandae eius esse, hic aperiam asperiores! Aliquid tempore, minima modi error asperiores a harum itaque.</h6>
+                </div>
+            </div>
         </div>
-        <div class="copyright">
-            <p class="copyright__text">Copyright © 2023 莫里亞蒂犯罪推理事務所</p>
-        </div>
-    
-      </footer>
-      <!-- end footer -->
+
+        <!-- start footer -->
+        <div id="footer"></div>
+        <!-- end footer -->
     </div>
 </body>
 <!-- JS -->
