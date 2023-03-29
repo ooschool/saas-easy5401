@@ -392,6 +392,11 @@ a{
     float:right;
     width: 10%;
 }
+.card .btn-area.close{
+    float:right;
+    width: 10%;
+    display: none;
+}
 .card .btn-answer{
     max-width: 100%;
     width: 40px;
@@ -415,6 +420,7 @@ a{
     font-size: 20px;
     line-height: 24px;
     padding-top: 30px;
+    display: none;
 }
 
 .type-card{
